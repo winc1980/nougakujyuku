@@ -1,0 +1,17 @@
+{
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    },
+  
+    // prettier settings
+    //"prettier.prettierPath": "./node_modules/prettier",
+  
+    // stylelint settings
+    "stylelint.enable": true,
+    "stylelint.configFile": "./.stylelintrc",
+    "stylelint.validate": ["css"],
+    "css.validate": false
+  }

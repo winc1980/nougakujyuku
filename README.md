@@ -1,4 +1,4 @@
-# microCMS and Next.js StarterKit, 早稲田コンピュータ研究会
+# microCMS and Next.js StarterKit, 早稲田コンピュータ研究会 dev
 
 ## microCMSのセットアップ
 

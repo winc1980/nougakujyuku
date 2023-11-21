@@ -1,12 +1,13 @@
 <img src="./doc/images/top_image.png" />
 
 <div align="center">
-  <h1>農学塾 HP</h1>
+  <h1>農楽塾 HP</h1>
   <img src="https://img.shields.io/badge/Next.js-14.0.1-000000.svg?logo=next.js&style=plastic">
   <img src="https://img.shields.io/badge/React-18.x-61DAFB.svg?logo=react&style=plastic">
 </div>
 
 ## Next.js 公式ドキュメント
+
 https://nextjs.org/docs
 
 ## microCMSのセットアップ
@@ -52,6 +53,7 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## webhookを通す
+
 参考：[microCMSのコンテンツを更新した時に、WebhookでGitHub Actionsを実行する](https://kimulaco.com/post/microcms-webhook-to-github-actions/)
 
 ## Learn More

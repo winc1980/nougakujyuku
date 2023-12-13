@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>農学塾</title>
-</head>
-<body>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- swiperを使うためlinkタグを追加しました -->
+    <title>農楽塾</title>
+  </head>
+  <body>
     <!-- ヘッダーここから -->
     <!-- ヘッダーここまで -->
     <!-- ファーストビューここから -->
@@ -13,16 +19,82 @@
     <!-- "透明"ここから -->
     <!-- "透明"ここまで -->
     <!-- 活動内容ここから -->
+    <div class="content">
+      <div class="content-wrapper fade-left">
+        <h1>活動内容</h1>
+        <div class="item-wrapper">
+          <div class="content-item1">
+            <img src="img/1682832389116 1.png" alt="" />
+            <p>
+              平日は晴れた日のお昼、２限と３限の間にシフト制で集まり、大隈庭園内の田んぼ「わせでん」と菜園の管理を行っています。水やりや成長記録が終わった後は、
+              3限が空いているメンバーでご飯に行くこともあります。
+            </p>
+          </div>
+          <div class="content-item2">
+            <img src="img/PXL_20220604_020948227 1.png" alt="" />
+            <p>
+              土日や長期休み期間には農家さんに訪問して農業体験を行っています。訪問する場所は神奈川や茨城、埼玉など関東近郊で、作業の後には採れた作物を使ったおいしいご飯を頂くこともあります。
+            </p>
+          </div>
+          <div class="content-item3">
+            <img src="img/921 ステップ学級稲刈り1 1.png" alt="" />
+            <p>
+              地域にまつわるボランティア活動として援農ボランティアだけでなく、子供への自然教育や、里山の景観保全、新宿名産の野菜のPR活動など多様な活動を行っています。
+            </p>
+          </div>
+        </div>
+        <a class="content-jumpbtn" href="">農楽塾の一年</a>
+      </div>
+    </div>
     <!-- 活動内容ここまで -->
     <!-- 入会方法ここから -->
     <!-- 入会方法ここまで -->
     <!-- ギャラリーここから -->
+    <div class="gallery">
+      <h1>ギャラリー</h1>
+      <div class="gallery-container fade">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/PXL_20221127_021258016 1.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/2022.5 1.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/PXL_20220625_072617081 1.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/農学塾　収穫祭 1.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/LINE_ALBUM_2022823 かかし作り_220909_0 2.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/PXL_20220604_020948227 1.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <a class="gallery-jumpbtn" href="">一覧はこちら</a>
+    </div>
     <!-- ギャラリーここまで -->
     <!-- 活動場所ここから -->
     <!-- 活動場所ここまで -->
     <!-- リンクブロックここから -->
     <!-- リンクブロックここまで -->
     <!-- フッターここから -->
+    <footer>
+      <p>農を楽しみ、農を考える</p>
+      <small>@2023 Copyright:農楽塾</small>
+    </footer>
     <!-- フッターここまで -->
-</body>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="app.js"></script>
+  <!-- swiperを使うため、scriptタグを追加しました -->
 </html>

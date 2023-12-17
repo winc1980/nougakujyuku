@@ -13,9 +13,271 @@ body, nav, section, header, main, footer, h1, h2, p, ul, li, dl, dt, dd, div {
 }
 
 body * {
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: "Noto Sans JP", 'Inter',sans-serif;
     box-sizing: border-box;
     text-decoration: none;
     font-size: 1.6rem;
     margin: 0;
 }
+
+/* ファーストビューはここから */
+
+.first_view {
+    position: relative;
+    background-color: #fbf0de;
+    width: 100%;
+    aspect-ratio: 10/9;
+    z-index: 0;
+}
+
+.img_1{
+    width: 67%;
+    height: auto;
+    position: absolute;
+    top: 0%;
+    bottom: auto;
+    left: 0%;
+    right: auto;
+    z-index: 0;
+
+}
+
+.keyword1,.keyword2{
+    position:absolute;
+    width: 22%;
+    aspect-ratio: 280/47;
+    left: 64%;
+    border-radius: 3px;
+    border: 1px solid #553116;
+    background-color: #fbf0de;
+    opacity: 0;
+
+    font-family: "Noto Sans JP", 'Inter',sans-serif;
+    font-size: 2.2vw;
+    font-weight: 550;
+    line-height: 35px;
+    letter-spacing: 0.11em;
+    text-align: left;
+    font-variation-settings: 'slnt' 0;
+    color: #553116;
+    
+}
+
+.keyword1{
+    top: 16%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-top: 0.3%; */
+    padding-left: 4.5%;
+
+}
+
+.keyword2{
+    top: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_2{
+    position: absolute;
+    width: 25%;
+    height: auto;
+    top: 42%;
+    left: 58%;
+    border-radius: 4px;
+    border: 1px;
+    z-index: 10;
+    opacity: 0;
+}
+
+.img_3{
+    position: absolute;
+    width: 15%;
+    height: auto;
+    top: 71%;
+    left: 50%;
+    border: 0.5px solid #000000;
+    border-radius: 5px;
+    z-index: 20;
+    opacity: 0;
+}
+
+.img_4{
+    position: absolute;
+    width: 26%;
+    height: auto;
+    top: 62%;
+    left: 10%;
+    border: 0.5px solid #000000;
+    border-radius: 5px;
+    z-index: 20;
+    opacity: 0;
+}
+
+.under_the_first_view{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1366/1613.7;
+    background-image: url(img/PXL_20220607_041720744\ 1.png);
+    background-size: cover;
+}
+
+.is-animated{
+    animation-delay: 500ms;
+    animation-name: is-animated;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes is-animated {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+     opacity: 1;
+        transform: translateY(0);
+    } 
+}
+
+.fade-in_left{
+    animation-delay: 500ms;
+    animation-name: fade-in_left;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in_left {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100%{
+     opacity: 1;
+        transform: translateX(0);
+    } 
+}
+/* ファーストビューここまで */
+
+/* "透明"ここから */
+.small_eclipse1,.small_eclipse2{
+    position: absolute;
+    width: 30%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #FFFAF1;
+    z-index: 10;
+    opacity: 0;
+
+}
+
+.small_eclipse1{
+    top: 6%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.small_eclipse2{
+    top: 24%;
+    left: 54%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.statement1,.statement2{
+    font-family: "Noto Sans JP", 'Inter',sans-serif;
+    font-variation-settings: 'slnt' 0;
+    color: #553116;
+    
+}
+
+.statement1{
+    font-size: 2.0vw;
+    padding-left: 10%;
+    text-align: left;
+    font-weight: 550;
+}
+
+.statement1 span{
+    font-size: 2.5vw;
+}
+
+.statement2{
+    font-weight: 550;
+    font-size: 1.3vw;
+    text-align: center;
+}
+
+.big_eclipse{
+    position: absolute;
+    width: 33%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #FFFAF1;
+    z-index: 10;
+    top: 55%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+}
+
+.medium_eclipse{
+    position: absolute;
+    width: 31%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #FFFAF1;
+    z-index: 10;
+    top: 70%;
+    left: 58%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.statement3,.statement4{
+    width: 80%;
+    height:auto;
+    font-family: "Noto Sans JP", 'Inter',sans-serif;
+    font-size: 2.5vw;
+    font-weight: 550;
+    color: #327F09;
+    line-height: 180%;
+}
+
+.statement3{
+    text-align: left;
+}
+
+.statement4{
+    text-align: right;
+}
+
+.is-focused{
+    animation-delay: 500ms;
+    animation-name: is-focused;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes is-focused{
+    0%{
+        transform: scale(0);
+      }
+      100%{
+          transform:scale(1);
+          opacity: 1;
+      }
+}
+/* "透明"ここまで */

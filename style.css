@@ -19,3 +19,173 @@ body * {
     font-size: 1.6rem;
     margin: 0;
 }
+
+.header{
+    background-color: #FBF0DE;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo li{
+    margin-left: 5rem;
+}
+
+
+
+.message p{
+    font-size: 29px;
+    color: #553116;
+}
+
+.nougaku{
+    width: 292px;
+height: 377.88px;
+margin-left: 865px;
+
+}
+
+.side{
+    width: 404px;
+height: 236.18px;
+margin-left: 163px;
+border-radius: 5px;
+
+}
+
+.alone{
+    width: 182px;
+height: 233.73px;
+margin-left: 767px;
+border-radius: 5px;
+border: 0.5px;
+
+}
+h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 40px
+}
+
+span{
+    font-weight: 400;
+    font-size: 40px;
+
+}
+
+.imgimg img{
+    width: 87px;
+    height: 87px;
+}
+
+ul{
+    list-style: none;
+    padding: 0 2rem;
+}
+
+ul li{
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+.admission{
+    display: flex;
+    justify-content: center;
+    background-color: #327F09;
+    color: white;
+}
+
+.imgimg{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.active{
+    width:100%;
+}
+.active-grandchild,.active{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+.text{
+    text-align: center;
+}
+
+h3{
+    font-size: 32px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #327F09;
+}
+
+
+.text p{
+    margin-bottom: 30px;
+    color: #553116;
+}
+
+.thick{
+    font-weight: 600;
+    text-decoration: underline solid brown 3px;
+}
+
+@media screen and (max-width: 600px){
+    .thick,.active{
+        flex-direction: column;
+        display: block;
+    }
+
+    .active-grandchild,.active{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #hamburger {
+        height: 50px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+      }
+
+      .logo{
+        display: none;
+      }
+
+      .icon {
+        height: 18px;
+        width: 30px;
+        position: relative;
+        margin-right: 8px;
+      }
+    
+      .icon span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        position: absolute;
+      }
+    
+      .icon span:nth-of-type(1) {
+        top: 0px;
+      }
+    
+      .icon span:nth-of-type(2) {
+        top: 8px;
+      }
+    
+      .icon span:nth-of-type(3) {
+        top: 16px;
+      }
+}

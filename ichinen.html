@@ -12,13 +12,13 @@
 <body>
   <header>
     <div class="logo">
-      <img src="images/農楽塾ロゴ1.png" alt="農楽塾ロゴ1">
+      <img src="img/nogakujuku_logo.webp" alt="農楽塾ロゴ1">
       <div class="logo_text">
         <p class="Japanese_logo">農楽塾</p>
         <p class="English_logo">nogakujuku</p>
       </div>
     </div>
-    <nav class="navigation">
+    <nav>
       <ul>
         <li><a href="">農楽塾の一年</a></li>
         <li><a href="">ギャラリー一覧</a></li>
@@ -46,14 +46,17 @@
           <div class="button_wrapper">
             <button type="button" onclick="window.open('https://www.waseda.jp/inst/wavoc/project/volcafe/')">ボラカフェとは？</button>
           </div>
-          <div class="img_wrapper">
-            <p>田おこし↓</p>
-            <img src="images/田おこし.png" alt="田おこしの画像">
+          <div class="taokoshi">
+            <div class="img_wrapper">
+              <p>田おこし↓</p>
+              <img src="img/taokoshi.webp" alt="田おこしの画像">
+            </div>
           </div>
           <div class="shirokaki">
             <div class="img_wrapper">
               <p>代掻き↓</p>
-              <img src="images/代掻き.png" alt="代掻きの画像">
+              <img class="shirokaki_pc" src="img/shirokaki1.webp" alt="代掻きの画像">
+              <img class="shirokaki_smartphone" src="img/shirokaki2.webp" alt="代掻きの画像">
             </div>
           </div>
           <div class="shirokakitowa_wrapper">
@@ -75,20 +78,24 @@
               <ul class="may_list">
                 <li>春定植</li>
               </ul>
-              <p class="teishokutowa">
-                「定植」とは、苗床やプラン<br>
-                ターを畑に植える作業のこと
-              </p>
+              <div class="teishokutowa_p_wrapper">
+                <p class="teishokutowa">
+                  「定植」とは、苗床やプラン<br>
+                  ターを畑に植える作業のこと
+                </p>
+              </div>
             </div>
             <div class="step_gakkyu_shirokaki">
               <div class="img_wrapper">
                 <p>ステップ学級代掻き ↓</p>
-                <img src="images/ステップ学級代掻き.png" alt="ステップ学級代掻きの画像">
+                <img src="img/stepgakkyushirokaki.webp" alt="ステップ学級代掻きの画像">
               </div>
             </div>
-            <div class="img_wrapper">
-              <p>田植え ↓</p>
-              <img src="images/田植え.png" alt="田植えの画像">
+            <div class="taue">
+              <div class="img_wrapper">
+                <p>田植え ↓</p>
+                <img src="img/taue.webp" alt="田植えの画像">
+              </div>
             </div>
           </div>
         </div>
@@ -105,19 +112,19 @@
           <div class="tougarashi">
             <div class="img_wrapper">
               <p>↓ とうがらしプロジェクト</p>
-              <img src="images/とうがらしプロジェクト.png" alt="とうがらしプロジェクトの画像">
+              <img src="img/tougarashi.webp" alt="とうがらしプロジェクトの画像">
             </div>
           </div>
           <div class="noukahoumon">
             <div class="img_wrapper">
               <p>農家訪問 ↓</p>
-              <img src="images/農家訪問.png" alt="農家訪問の画像">
+              <img src="img/noukahoumon.webp" alt="農家訪問の画像">
             </div>
           </div>
           <div class="satoyamahozen">
             <div class="img_wrapper">
               <p>里山保全 ↓</p>
-              <img src="images/里山保全.png" alt="里山保全の画像">
+              <img src="img/satoyamahozen.webp" alt="里山保全の画像">
             </div>
           </div>
         </div>
@@ -133,7 +140,7 @@
             <div class="wasedadetambo">
               <div class="img_wrapper">
                 <p>↓ 早稲田で田んぼプロジェクト</p>
-                <img src="images/早稲田で田んぼプロジェクト.png" alt="早稲田で田んぼプロジェクトの画像">
+                <img src="img/wasedadetambo.webp" alt="早稲田で田んぼプロジェクトの画像">
               </div>
             </div>
           </div>
@@ -147,7 +154,7 @@
             <div class="nethari">
               <div class="img_wrapper">
                 <p>ネット張り ↓</p>
-                <img src="images/ネット張り.png" alt="ネット張りの画像">
+                <img src="img/nethari.webp" alt="ネット張りの画像">
               </div>
             </div>
           </div>
@@ -165,7 +172,7 @@
           <div class="step_gakkyu_inekari">
             <div class="img_wrapper">
               <p>↓ ステップ学級稲刈り</p>
-              <img src="images/ステップ学級稲刈り.png" alt="ステップ学級稲刈りの画像">
+              <img src="img/stepgakkyuinekari.webp" alt="ステップ学級稲刈りの画像">
             </div>
           </div>
         </div>
@@ -182,19 +189,23 @@
               </div>
               <li>古株すきこみ</li>
             </ul>
-            <div class="img_wrapper">
-              <p>里山稲刈り ↓</p>
-              <img src="images/里山稲刈り.png" alt="里山稲刈りの画像">
+            <div class="satoyamainekari">
+              <div class="img_wrapper">
+                <p>里山稲刈り ↓</p>
+                <img src="img/satoyamainekari.webp" alt="里山稲刈りの画像">
+              </div>
             </div>
             <div class="bucket_ine">
               <div class="img_wrapper">
                 <p>↓ バケツ稲プロジェクト</p>
-                <img src="images/バケツ稲プロジェクト.png" alt="バケツ稲プロジェクトの画像">
+                <img src="img/bucketine.webp" alt="バケツ稲プロジェクトの画像">
               </div>
             </div>
-            <div class="img_wrapper">
-              <p>↓ 脱穀</p>
-              <img src="images/脱穀.png" alt="脱穀の画像">
+            <div class="dakkoku">
+              <div class="img_wrapper">
+                <p>↓ 脱穀</p>
+                <img src="img/dakkoku.webp" alt="脱穀の画像">
+              </div>
             </div>
           </div>
         </div>
@@ -206,7 +217,7 @@
           <div class="wasedasai">
             <div class="img_wrapper">
               <p>早稲田祭 ↓</p>
-              <img src="images/早稲田祭.png" alt="早稲田祭の画像">
+              <img src="img/wasedasai.webp" alt="早稲田祭の画像">
             </div>
           </div>
         </div>
@@ -226,24 +237,19 @@
           <div class="shukakusai">
             <div class="img_wrapper">
               <p>収穫祭 ↓</p>
-              <img src="images/収穫祭.png" alt="収穫祭の画像">
+              <img src="img/shukakusai.webp" alt="収穫祭の画像">
             </div>
           </div>
         </div>
         <div class="message">
+          <div class="month_name_wrapper right_month_name_wrapper"><div class="right_month_circle"></div></div>
           <p>
-            私たちは都心で「農」を実践しながら、普段、農業<br>
-            を経験できない人に、その機会を提供します。土に<br>
-            触れ、汗を流す楽しさを知ってほしい。<br>
-            そして、あなたのすぐそばにある「農」について、<br>
-            すこしでも考えてもらいたい。<br>
-            それが、私たち「農楽塾」の願いです。
+            <span>私たちは都心で「農」を</span><span>実践しながら、</span><span>普段、農業を経験できない人に、</span><span>その機会を提供します。</span><span>土に触れ、</span><span>汗を流す楽しさを</span><span>知ってほしい。</span><span>そして、あなたの</span><span>すぐそばにある</span><span>「農」について、</span><span>すこしでも</span><span>考えてもらいたい。</span><span>それが、</span><span>私たち「農楽塾」の願いです。</span>
           </p>
         </div>
         <div class="invitation">
           <p>
-            農楽塾では、学年・所属を問わずに新メンバーを募集しています。活動に興味をもたれた方は、<br>
-            ぜひ各種SNSからご連絡ください。新歓期間以外は随時個別に説明会をさせていただきます。
+            <span>農楽塾では、学年・所属を</span><span>問わずに</span><span>新メンバーを</span><span>募集しています。</span><span>活動に興味を</span><span>もたれた方は、</span><span>ぜひ各種SNSから</span><span>ご連絡ください。</span><span>新歓期間以外は随時個別に</span><span>説明会をさせていただきます。</span>
           </p>
         </div>
 

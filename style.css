@@ -6,6 +6,7 @@ html {
 
 img {
   border: 0;
+  object-fit: cover;
 }
 
 body,
@@ -384,7 +385,7 @@ margin-left: 865px;
     width: 404px;
 height: 236.18px;
 margin-left: 163px;
-border-radius: 5px;
+border-radius: 5px;      
 
 }
 
@@ -403,15 +404,10 @@ h2{
     font-size: 40px
 }
 
-span{
-    font-weight: 400;
-    font-size: 40px;
-
-}
-
-.imgimg img{
-    width: 87px;
-    height: 87px;
+.admission span{
+  font-weight: 400;
+  font-size: 40px;
+  margin-right: 3rem;
 }
 
 ul{
@@ -425,16 +421,33 @@ ul li{
 }
 
 .admission{
-    display: flex;
-    justify-content: center;
-    background-color: #327F09;
-    color: white;
+  background-color: #327F09;
+  color: white;
+  padding: 95px 0;
+}
+
+.admission ul{
+  margin: 0 auto;
+  max-width: 58rem;
 }
 
 .imgimg{
     display: flex;
     justify-content: space-between;
-    margin: 30px;
+    margin: 30px auto 0 auto;
+    max-width: 58rem;
+    animation: scroll-anim linear;
+    animation-timeline: scroll();
+}
+
+.imgimg img{
+  width: 87px;
+  animation: zoomIn 3s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.imgimg img:hover{
+  transform: scale(1.3, 1.3);
+  transition: all 0.3s ease-out;
 }
 
 .active{
@@ -465,7 +478,15 @@ h3{
 
 .thick{
     font-weight: 600;
-    text-decoration: underline solid brown 3px;
+    font-size: 20px;
+}
+
+.underline{
+  text-decoration: underline solid brown 3px;
+}
+
+.active img{
+  max-width: 380px;
 }
 
 @media screen and (max-width: 600px){
@@ -515,5 +536,35 @@ h3{
     
       .icon span:nth-of-type(3) {
         top: 16px;
+      }
+
+      .admission{
+        padding: 34.4px 0;
+      }
+
+      .admission h2{
+        font-size: 24px;
+        font-weight: 500;
+      }
+
+      .admission ul{
+        max-width: 25rem;
+      }
+
+      .admission ul li{
+        font-size: 15px;
+      }
+      
+      .admission span{
+        font-size: 22px;
+        margin-right: 1rem;
+      }
+
+      .imgimg{
+        max-width: 17.5rem;
+      }
+
+      .imgimg img{
+        width: 31px;
       }
 }

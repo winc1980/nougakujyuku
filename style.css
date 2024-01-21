@@ -6,6 +6,7 @@ html {
 
 img {
   border: 0;
+  object-fit: cover;
 }
 
 body,
@@ -345,4 +346,226 @@ footer small {
   }
 }
 
+/* <!-- ●活動内容ここまで --> */
+
+
+.header{
+    background-color: #FBF0DE;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo li{
+    margin-left: 5rem;
+}
+
+
+
+.message p{
+    font-size: 29px;
+    color: #553116;
+}
+
+.nougaku{
+    width: 292px;
+height: 377.88px;
+margin-left: 865px;
+
+}
+
+.side{
+    width: 404px;
+height: 236.18px;
+margin-left: 163px;
+border-radius: 5px;      
+
+}
+
+.alone{
+    width: 182px;
+height: 233.73px;
+margin-left: 767px;
+border-radius: 5px;
+border: 0.5px;
+
+}
+h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 40px
+}
+
+.admission span{
+  font-weight: 400;
+  font-size: 40px;
+  margin-right: 3rem;
+}
+
+ul{
+    list-style: none;
+    padding: 0 2rem;
+}
+
+ul li{
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+.admission{
+  background-color: #327F09;
+  color: white;
+  padding: 95px 0;
+}
+
+.admission ul{
+  margin: 0 auto;
+  max-width: 58rem;
+}
+
+.imgimg{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto 0 auto;
+    max-width: 58rem;
+    animation: scroll-anim linear;
+    animation-timeline: scroll();
+}
+
+.imgimg img{
+  width: 87px;
+  animation: zoomIn 3s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.imgimg img:hover{
+  transform: scale(1.3, 1.3);
+  transition: all 0.3s ease-out;
+}
+
+.active{
+    width:100%;
+}
+.active-grandchild,.active{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+.text{
+    text-align: center;
+}
+
+h3{
+    font-size: 32px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #327F09;
+}
+
+
+.text p{
+    margin-bottom: 30px;
+    color: #553116;
+}
+
+.thick{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.underline{
+  text-decoration: underline solid brown 3px;
+}
+
+.active img{
+  max-width: 380px;
+}
+
+@media screen and (max-width: 600px){
+    .thick,.active{
+        flex-direction: column;
+        display: block;
+    }
+
+    .active-grandchild,.active{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #hamburger {
+        height: 50px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+      }
+
+      .logo{
+        display: none;
+      }
+
+      .icon {
+        height: 18px;
+        width: 30px;
+        position: relative;
+        margin-right: 8px;
+      }
+    
+      .icon span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        position: absolute;
+      }
+    
+      .icon span:nth-of-type(1) {
+        top: 0px;
+      }
+    
+      .icon span:nth-of-type(2) {
+        top: 8px;
+      }
+    
+      .icon span:nth-of-type(3) {
+        top: 16px;
+      }
+
+      .admission{
+        padding: 34.4px 0;
+      }
+
+      .admission h2{
+        font-size: 24px;
+        font-weight: 500;
+      }
+
+      .admission ul{
+        max-width: 25rem;
+      }
+
+      .admission ul li{
+        font-size: 15px;
+      }
+      
+      .admission span{
+        font-size: 22px;
+        margin-right: 1rem;
+      }
+
+      .imgimg{
+        max-width: 17.5rem;
+      }
+
+      .imgimg img{
+        width: 31px;
+      }
+}
 /* <!-- ●活動内容ここまで --> */

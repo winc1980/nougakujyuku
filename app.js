@@ -1,3 +1,29 @@
+// ハンバーガーメニュー
+const hamburger = document.getElementById('hamburger');
+const spanTags = document.querySelectorAll('.icon span');
+spanTagsArray = Array.from(spanTags);
+console.log(spanTagsArray);
+const headerMenu = document.querySelector('.header-menu');
+hamburger.addEventListener('click', function() {
+  if (hamburger.classList.contains('btn-active')) {
+    hamburger.classList.remove('btn-active');
+    spanTagsArray[0].style.transform = '';
+    spanTagsArray[0].style.top = '';
+    spanTagsArray[1].style.display = '';
+    spanTagsArray[2].style.transform = '';
+    spanTagsArray[2].style.top = '';
+    headerMenu.style.top = '-350px';
+  } else {
+    hamburger.classList.add('btn-active');
+    spanTagsArray[0].style.transform = 'rotate(45deg)'
+    spanTagsArray[0].style.top = '7px';
+    spanTagsArray[1].style.display = 'none';
+    spanTagsArray[2].style.transform = 'rotate(-45deg)';
+    spanTagsArray[2].style.top = '8px';
+    headerMenu.style.top = '10vw';
+  }
+});
+
 const mySwiper = new Swiper(".swiper", {
   autoplay: true,
   loop: true,

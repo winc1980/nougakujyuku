@@ -12,7 +12,7 @@ hamburger.addEventListener('click', function() {
     spanTagsArray[1].style.display = '';
     spanTagsArray[2].style.transform = '';
     spanTagsArray[2].style.top = '';
-    headerMenu.style.top = '-350px';
+    headerMenu.style.right = '-100%';
   } else {
     hamburger.classList.add('btn-active');
     spanTagsArray[0].style.transform = 'rotate(45deg)'
@@ -20,7 +20,7 @@ hamburger.addEventListener('click', function() {
     spanTagsArray[1].style.display = 'none';
     spanTagsArray[2].style.transform = 'rotate(-45deg)';
     spanTagsArray[2].style.top = '8px';
-    headerMenu.style.top = '10vw';
+    headerMenu.style.right = '0';
   }
 });
 

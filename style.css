@@ -409,17 +409,16 @@ ul {
   height: auto;
   width: 100%;
   background: #fbf0de;
-  padding-bottom: 95px;
+  padding:10rem 0 95px 0;
 }
 
-.gallery h1 {
+.gallery h2 {
   text-align: center;
   color: #553116;
-  font-family: Inter;
+  font-family: "Inter";
   font-size: 40px;
   font-weight: 600;
   letter-spacing: 12px;
-  padding: 214px 0 92px 0;
 }
 
 .gallery-container {
@@ -596,7 +595,7 @@ footer p {
 
 footer small {
   color: #fff;
-  font-family: Inter;
+  font-family: "Inter";
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 4.2px;
@@ -693,7 +692,7 @@ footer small {
 }
 
 @media screen and (max-width: 450px) {
-  .gallery h1 {
+  .gallery h2 {
     font-size: 24px;
   }
 
@@ -852,24 +851,26 @@ ul li{
   transition: all 0.3s ease-out;
 }
 
-.active{
+#active{
     width:100%;
 }
-.active-grandchild,.active{
+.active-grandchild, #active{
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .text{
     text-align: center;
+    padding: 0 1rem;
 }
 
-h3{
-    font-size: 32px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+.text h2{
+    font-size: 3.2rem;
+    margin: 5rem 0;
     color: #327F09;
+    font-weight: 600;
+    letter-spacing: 8px;
 }
 
 
@@ -887,19 +888,31 @@ h3{
   text-decoration: underline solid brown 3px;
 }
 
-.active img{
+#active{
+  padding: 10rem 0;
+}
+
+#active img{
   max-width: 380px;
 }
 
 @media screen and (max-width: 600px){
-    .thick,.active{
-        flex-direction: column;
-        display: block;
+    #active{
+      padding: 5rem 0;
     }
 
-    .active-grandchild,.active{
-        display: flex;
+    #active img{
+      max-width: 278px;
+    }
+
+    .text h2{
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
+
+    .thick{
         flex-direction: column;
+        display: inline;
     }
 
     .top{

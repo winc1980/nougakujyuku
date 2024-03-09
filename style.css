@@ -45,6 +45,20 @@ ul {
   list-style: none;
 }
 
+.header{
+  background-color: #FBF0DE;
+  height:11rem;
+}
+
+.header-menu a{
+  color: rgba(85, 49, 22, 1);
+  font-size: 1.8rem;
+}
+
+.header-menu a:hover{
+  color: #a98870;
+}
+
 /* ファーストビューはここから */
 
 .first_view {
@@ -531,6 +545,7 @@ ul {
   display: flex;
   flex-direction: column;
   height: 100px;
+  position: absolute;
 }
 .link_item_3{
   width: 100%;
@@ -543,8 +558,21 @@ ul {
 .link_SNS{
   width:100%;
   height: auto;
+  margin-top: 1.3rem;
   display: flex;
   justify-content: space-between;
+  animation: scroll-anim linear;
+  animation-timeline: scroll();
+}
+
+.link_SNS_logo{
+  width:5.6rem;
+  animation: zoomIn 3s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.link_SNS_logo:hover{
+  transform: scale(1.3, 1.3);
+  transition: all 0.3s ease-out;
 }
 /* リンクブロックここまで */
 
@@ -703,10 +731,7 @@ footer small {
 /* <!-- ●活動内容ここまで --> */
 
 
-.header{
-    background-color: #FBF0DE;
-    height: 4.5rem;
-}
+
 
 .top{
     display: flex;
@@ -715,13 +740,18 @@ footer small {
     position: fixed;
     z-index: 500;
     width: 100%;
+    padding: 1rem 0;
 }
 
 .top img {
-  max-width: 30vw;
+  width: 30rem;
   height: auto;
   margin-left: 5vw;
 
+}
+
+.pc-d-none{
+  display: none;
 }
 
 /* .logoを.header-menuに変更しました。 */
@@ -806,7 +836,7 @@ ul li{
 .imgimg{
     display: flex;
     justify-content: space-between;
-    margin: 30px auto 0 auto;
+    margin: 60px auto 0 auto;
     max-width: 58rem;
     animation: scroll-anim linear;
     animation-timeline: scroll();
@@ -872,9 +902,22 @@ h3{
         flex-direction: column;
     }
 
+    .top{
+      padding: 0;
+    }
+
     .top img {
       z-index: 3;
+      max-width: 30vw;
     }
+
+    .pc-d-none{
+      display: flex;
+    }
+
+    .header{
+      height: 4.2rem;
+  }
 
     #hamburger {
         height: 50px;
@@ -969,7 +1012,7 @@ h3{
       }
 
       .imgimg img{
-        width: 31px;
+        width: 35px;
       }
       /* ファーストビュー、透明、リンクブロックに関するレスポンシブデザインはここから */
       .first_view{
@@ -1115,17 +1158,23 @@ h3{
         height:1%;
     }
     .link_group_2{
-        top: 68%;
-        left: 16%;
-        width: 64%;
+        top: 78%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
     }
     .link_SNS{
         justify-content: space-evenly;
+        margin-top: 0;
     }
     .link_SNS_logo{
-        width:75%;
-        aspect-ratio: 1/1;
+        width:3.1rem;
     }
+    .header-menu .link_SNS_logo{
+      width:3.1rem;
+      margin: 0 2rem;
+  }
     .link_item_3{
       width: 100%;
       font-size: 14px;
@@ -1133,7 +1182,7 @@ h3{
       text-align-last:justify;
       letter-spacing: 0.3em;
       margin-top: 5%;
-      margin-bottom: 24%;
+      margin-bottom: 21%;
     }
     .link_item_3::before{
         position: absolute; /*--positionを追加--*/

@@ -94,36 +94,38 @@
     </div>
     <!-- "透明"ここまで -->
     <!-- 活動内容ここから -->
-    <div class="content">
-      <div class="content-wrapper fade-left">
-        <h1>活動内容</h1>
-        <div class="item-wrapper">
-          <div class="content-item1">
-            <img src="img/content_item1.webp" alt="" />
-            <p>
-              平日は晴れた日のお昼、２限と３限の間にシフト制で集まり、大隈庭園内の田んぼ「わせでん」と菜園の管理を行っています。水やりや成長記録が終わった後は、
-              3限が空いているメンバーでご飯に行くこともあります。
-            </p>
+    <div id="activity">
+      <div class="content">
+        <div class="content-wrapper fade-left">
+          <h1>活動内容</h1>
+          <div class="item-wrapper">
+            <div class="content-item1">
+              <img src="img/content_item1.webp" alt="" />
+              <p>
+                平日は晴れた日のお昼、２限と３限の間にシフト制で集まり、大隈庭園内の田んぼ「わせでん」と菜園の管理を行っています。水やりや成長記録が終わった後は、
+                3限が空いているメンバーでご飯に行くこともあります。
+              </p>
+            </div>
+            <div class="content-item2">
+              <img src="img/gallery6.webp" alt="" />
+              <p>
+                土日や長期休み期間には農家さんに訪問して農業体験を行っています。訪問する場所は神奈川や茨城、埼玉など関東近郊で、作業の後には採れた作物を使ったおいしいご飯を頂くこともあります。
+              </p>
+            </div>
+            <div class="content-item3">
+              <img src="img/step.webp" alt="" />
+              <p>
+                地域にまつわるボランティア活動として援農ボランティアだけでなく、子供への自然教育や、里山の景観保全、新宿名産の野菜のPR活動など多様な活動を行っています。
+              </p>
+            </div>
           </div>
-          <div class="content-item2">
-            <img src="img/gallery6.webp" alt="" />
-            <p>
-              土日や長期休み期間には農家さんに訪問して農業体験を行っています。訪問する場所は神奈川や茨城、埼玉など関東近郊で、作業の後には採れた作物を使ったおいしいご飯を頂くこともあります。
-            </p>
-          </div>
-          <div class="content-item3">
-            <img src="img/step.webp" alt="" />
-            <p>
-              地域にまつわるボランティア活動として援農ボランティアだけでなく、子供への自然教育や、里山の景観保全、新宿名産の野菜のPR活動など多様な活動を行っています。
-            </p>
-          </div>
+          <a class="content-jumpbtn" href="">農楽塾の一年</a>
         </div>
-        <a class="content-jumpbtn" href="">農楽塾の一年</a>
       </div>
     </div>
     <!-- 活動内容ここまで -->
     <!-- 入会方法ここから -->
-    <div class="admission">
+    <div class="admission" id="admission">
         <h2>入会方法</h2>
         <ul>
            <li><span>1</span>各種SNSで連絡(Twitter・Instagram・公式LINE)</li>
@@ -138,7 +140,7 @@
     </div>
     <!-- 入会方法ここまで -->
     <!-- ギャラリーここから -->
-    <div class="gallery">
+    <div class="gallery" id="gallery">
       <h2>ギャラリー</h2>
       <div class="gallery-container fade">
         <div class="swiper">
@@ -184,22 +186,22 @@
       </div>
     </div>  
     <!-- 活動場所ここまで -->
-    <!-- リンクブロックここから -->
-    <div class = "link_block">
-      <div class="container">
+    <!-- フッターここから -->
+    <footer>
+      <div class = "link_block">
         <div class="link_group_1">
             <ul class = inside_the_page>
                 <li class = "to_Top"><a href="">トップ</a></li>
-                <li class = link_item_1><a href="">ー活動内容</a></li>
-                <li class = link_item_1><a href="">ー入会方法</a></li>
-                <li class = link_item_1><a href="">ーギャラリー</a></li>
-                <li class = link_item_1><a href="">ー活動場所</a></li>
+                <li class = link_item_1><a href="#activity">ー活動内容</a></li>
+                <li class = link_item_1><a href="#admission">ー入会方法</a></li>
+                <li class = link_item_1><a href="#gallery">ーギャラリー</a></li>
+                <li class = link_item_1><a href="#active">ー活動場所</a></li>
             </ul>
             <ul class = outside_the_page>
                 <li class = "link_blank"></li>
-                <li class = link_item_2><a href="">農楽塾の一年</a></li>
+                <li class = link_item_2><a href="ichinen.html">農楽塾の一年</a></li>
                 <li class = link_item_2><a href="">ギャラリー一覧</a></li>
-                <li class = link_item_2><a href="">プロジェクト紹介</a></li>
+                <li class = link_item_2><a href="project.html">プロジェクト紹介</a></li>
                 <li class = link_item_2><a href="">メディア情報</a></li>
             </ul>
         </div>
@@ -213,12 +215,10 @@
             </div>
         </div>
       </div>
-  </div>
-    <!-- リンクブロックここまで -->
-    <!-- フッターここから -->
-    <footer>
-      <p>農を楽しみ、農を考える</p>
-      <small>@2023 Copyright:農楽塾</small>
+      <div class="copyright">
+        <p>農を楽しみ、農を考える</p>
+        <small>@2023 Copyright:農楽塾</small>
+      </div>
     </footer>
     <!-- フッターここまで -->
   </body>

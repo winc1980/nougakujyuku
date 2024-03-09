@@ -498,6 +498,12 @@ ul {
   background-color: #327F09;
   overflow: hidden;
 }
+.link_block a{
+  color: rgba(255, 255, 255, 1);
+}
+.link_block a:hover{
+  color: #563116;
+}
 .link_group_1{
   position: absolute;
   top: 16%;
@@ -581,14 +587,14 @@ ul {
 /* リンクブロックここまで */
 
 /* ここからfooter */
-footer {
+.copyright {
   height: 220px;
   text-align: center;
   animation: bg-change 10s;
   animation-fill-mode: forwards;
 }
 
-footer p {
+.copyright p {
   padding-top: 72px;
   padding-bottom: 54px;
   color: #327f09;
@@ -598,7 +604,7 @@ footer p {
   letter-spacing: 8px;
 }
 
-footer small {
+.copyright small {
   color: #fff;
   font-family: "Inter";
   font-size: 14px;

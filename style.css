@@ -1239,3 +1239,10 @@ ul li{
     }
 }
 /* <!-- ●活動内容ここまで --> */
+
+.coming_soon{
+  margin: 30rem 0;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Inter";
+}

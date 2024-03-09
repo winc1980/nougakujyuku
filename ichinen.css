@@ -193,32 +193,6 @@ body * {
   transform: scaleX(1);
 }
 
-/* ここからfooter */
-footer {
-  height: 220px;
-  text-align: center;
-  animation: bg-change 10s;
-  animation-fill-mode: forwards;
-}
-
-footer p {
-  padding-top: 72px;
-  padding-bottom: 54px;
-  color: #327f09;
-  font-family: Inter;
-  font-size: 32px;
-  font-weight: 220;
-  letter-spacing: 8px;
-}
-
-footer small {
-  color: #fff;
-  font-family: Inter;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 4.2px;
-}
-
 @media screen and (max-width: 1250px) {
   .content-wrapper h1 {
     margin: 30px 0 10px 15%;
@@ -298,16 +272,6 @@ footer small {
   }
 } */
 
-@keyframes bg-change {
-  /*footerの背景色アニメーション*/
-  0% {
-    background: #fbf0de;
-  }
-
-  100% {
-    background: rgba(139, 176, 119, 0.5);
-  }
-}
 
 @media screen and (max-width: 450px) {
   .gallery h1 {
@@ -328,10 +292,6 @@ footer small {
 
   .swiper-pagination-bullets.swiper-pagination-horizontal {
     top: 290px !important; /*paginationの位置が、importantを付けないとデザインの位置に動かなかったため*/
-  }
-
-  footer p {
-    font-size: 20px;
   }
 }
 

@@ -196,6 +196,8 @@ main {
   position: absolute;
   top: 35%;
   left: 5%;
+  width: initial !important;
+  background-color: #fff !important;
 }
 
 .projects hr {
@@ -289,31 +291,6 @@ main {
   height: auto;
   display: flex;
   justify-content: space-between;
-}
-
-footer {
-  height: 220px;
-  text-align: center;
-  animation: bg-change 10s;
-  animation-fill-mode: forwards;
-}
-
-footer p {
-  padding-top: 72px;
-  padding-bottom: 54px;
-  color: #327f09;
-  font-family: Inter;
-  font-size: 32px;
-  font-weight: 220;
-  letter-spacing: 8px;
-}
-
-footer small {
-  color: #fff;
-  font-family: Inter;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 4.2px;
 }
 
 /* ハンバーガーメニュー */
@@ -549,10 +526,6 @@ footer small {
 
   .readmore {
     font-size: 11px;
-  }
-
-  footer p {
-    font-size: 20px;
   }
 }
 

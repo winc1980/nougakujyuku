@@ -36,6 +36,10 @@ body * {
   margin: 0;
 }
 
+.container{
+  max-width: 1080px;
+}
+
 a{
   text-decoration: none;
   color: #000000;
@@ -423,6 +427,7 @@ ul {
 
 .gallery-container {
   margin-inline: auto;
+  margin: 6rem 0;
   max-width: 100%;
   position: relative;
 }
@@ -436,7 +441,7 @@ ul {
 }
 
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  top: 320px !important; /*paginationの位置が、importantを付けないとデザインの位置に動かなかったため*/
+  top: 350px !important; /*paginationの位置が、importantを付けないとデザインの位置に動かなかったため*/
 }
 
 .swiper-pagination-horizontal.swiper-pagination-bullets
@@ -692,13 +697,22 @@ footer small {
 }
 
 @media screen and (max-width: 450px) {
+  .gallery{
+    padding: 4rem 0;
+  }
+  
   .gallery h2 {
     font-size: 24px;
+    margin-bottom: 0;
   }
 
   .gallery img {
     width: 250px;
     object-fit: contain;
+  }
+
+  .gallery-container{
+    margin: 0;
   }
 
   .swiper-pagination-horizontal.swiper-pagination-bullets
